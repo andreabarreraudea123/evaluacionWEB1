@@ -151,13 +151,13 @@ $salarioSucursalC=15000000;
 echo "<br>";
 if($sumatoriaSalarios>$salarioSucarsalB&&$sumatoriaSalarios>$salarioSucursalC){
 
-    echo"El mayor ingrso lo tiene la sucrusal A";
+    echo"El mayor ingreso lo tiene la sucrusal A";
 }
 elseif($salarioSucarsalB>$sumatoriaSalarios&&$salarioSucarsalB>$salarioSucursalC){
-    echo"El mayor ingrso lo tiene la sucrusal B";
+    echo"El mayor ingreso lo tiene la sucrusal B";
 }
 else
-    echo"El mayor ingrso lo tiene la sucrusal C";
+    echo"El mayor ingreso lo tiene la sucrusal C";
 
 /*6. Almacena en un Array los 10 primeros números pares. Imprima en pantalla cada uno de estos, en una línea diferente con el siguiente
 formato:
@@ -216,8 +216,31 @@ $biotipo=calcularBiotipo(1.65);
 $biotipo=calcularBiotipo(1.78);
 $biotipo=calcularBiotipo(1.95);
 
+echo "<br>Ejercicio 10 <br>";
+
+/*$usuarios=array(
+    'usuario1'=>array('nombre'=>"Juan",'edad'=>30,'sexo'=>"Masculino"),*/
+
+$seleccionColombia=array(
+'jugador1'=>array('JUGADOR'=>"Radamel Falcao",'AÑO DE NACIMIENTO'=>edad(1986,2020), 'posicion'=>"Delantero",'ESTATURA'=>biotipo(1.77)),
+'jugador2'=>array('JUGADOR'=>"James Rodríguez",'AÑO DE NACIMIENTO'=>edad(1991,2020), 'posicion'=>"Medio campista",'ESTATURA'=>biotipo(1.81)),
+'jugador3'=>array('JUGADOR'=>"Juan Cuadrado",'AÑO DE NACIMIENTO'=>edad(1988,2020), 'posicion'=>"Delantero",'ESTATURA'=>biotipo(1.78)),
+'jugador4'=>array('JUGADOR'=>"Yerry Mina ",'AÑO DE NACIMIENTO'=>edad(1994,2020), 'posicion'=>"Defensor",'ESTATURA'=>biotipo(1.95)),
+'jugador5'=>array('JUGADOR'=>"David Ospina ",'AÑO DE NACIMIENTO'=>edad(1988,2020), 'posicion'=>"Portero",'ESTATURA'=>biotipo(1.83)),
+'jugador6'=>array('JUGADOR'=>"Davinsón Sanchez",'AÑO DE NACIMIENTO'=>edad(1996,2020), 'posicion'=>"Defensor ",'ESTATURA'=>biotipo(1.87)),
+'jugador7'=>array('JUGADOR'=>"Duvan Zapata ",'AÑO DE NACIMIENTO'=>edad(1991,2020), 'pocicion'=>"Delantero",'ESTATURA'=>biotipo(1.86)),
+'jugador8'=>array('JUGADOR'=>"Wilmar Barrios",'AÑO DE NACIMIENTO'=>edad(1993,2020), 'posicion'=>"Medio campista",'ESTATURA'=>biotipo(1.78)),
+'jugador9'=>array('JUGADOR'=>"Mateus Uribe",'AÑO DE NACIMIENTO'=>edad(1991,2020), 'posicion'=>"Medio campista",'ESTATURA'=>biotipo(1.80)));
 
 
+
+foreach($seleccionColombia as $arregloSeleccion=> $arregloJugador ){
+    echo("<br>".$arregloSeleccion."<br>");
+
+    foreach($arregloJugador as $clave =>$valor){
+        echo($valor."<br>");
+    }
+}
 
 
 
